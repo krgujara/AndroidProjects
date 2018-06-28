@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="medArray">
+        <item>Glipizide</item>
+        <item>Insulin Aspart</item>
+        <item>Sitagliptin</item>
+        <item>Tolbutamide</item>
+    </string-array>
+
+</resources>

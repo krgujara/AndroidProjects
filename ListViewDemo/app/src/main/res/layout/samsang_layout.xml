@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Samsang"
+        android:textSize="36dp"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:src="@drawable/redmi2"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="18dp"
+        android:text="         Samsung Mobiles are among the number 1 brands.
+         Samsung is the model developed by china.
+         It is the best model in the world
+         I wish every one owns atleast one Samsung Mobile.
+         Samsung mobile is only available on flipkart
+         Price is 10000 Rs only with 16Mp Camera
+
+         "
+        />
+
+</LinearLayout>

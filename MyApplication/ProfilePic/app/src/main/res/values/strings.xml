@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProfilePic</string>
+    <string-array name="pickdialogfrom">
+        <item> Take Photo</item>
+        <item>Choose from Gallary</item>
+
+    </string-array>
+</resources>

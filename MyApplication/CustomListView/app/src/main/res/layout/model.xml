@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.android.customlistview.Adapter">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:src="@drawable/i1"
+        />
+
+    <TextView
+        android:id="@+id/goalsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="Goals"
+        android:textSize="16dp"
+        android:textColor="#0099e5"
+        android:layout_alignTop="@+id/teamTv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <TextView
+        android:id="@+id/teamTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView1"
+        android:layout_weight=".45"
+        android:text=" Team"
+
+        android:textSize="16dp"
+        android:textStyle="italic"
+        android:textColor="#0099e5"
+        android:layout_alignBottom="@+id/imageView1" />
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView1"
+        android:layout_above="@id/teamTv"
+        android:text="Name"
+        android:textSize="20dp"
+        />
+
+
+</RelativeLayout>

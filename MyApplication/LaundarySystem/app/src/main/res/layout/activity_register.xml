@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#f5fffa"
+         >
+
+        <!-- View Title Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="@string/register_title"
+            android:textSize="25sp"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textStyle="bold" />
+
+        <!-- Name TextField -->
+
+        <EditText
+            android:id="@+id/registerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:drawableLeft="@drawable/username"
+            android:drawablePadding="20dp"
+            android:hint="Name"
+            android:background="#FFFFFF"
+            />
+
+        <!-- Email TextField -->
+
+        <EditText
+            android:id="@+id/registerEmail"
+            android:layout_width="fill_parent"
+            android:drawableLeft="@drawable/email"
+            android:padding="@dimen/activity_vertical_margin"
+            android:drawablePadding="20dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFF0"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password TextField -->
+
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="@dimen/activity_vertical_margin"
+            android:hint="Password"
+            android:drawableLeft="@drawable/passwordicon1"
+            android:drawablePadding="20dp"
+            android:inputType="textPassword" />
+
+        <!-- Mobile TextField -->
+
+        <EditText
+            android:id="@+id/registerMobile"
+            android:padding="@dimen/activity_vertical_margin"
+            android:layout_width="fill_parent"
+            android:background="#FFFFF0"
+            android:layout_height="wrap_content"
+            android:hint="Mobile No"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="20dp"
+            android:inputType="textPassword" />
+
+        <!-- Referal Code TextField -->
+
+        <EditText
+            android:id="@+id/registerReferalCode"
+            android:layout_width="fill_parent"
+            android:background="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:hint="Referal Code(if any)"
+            android:padding="@dimen/activity_vertical_margin"
+            android:drawableLeft="@drawable/refferal"
+            android:drawablePadding="20dp"
+            android:inputType="textPassword" />
+
+
+
+        <!-- Error message -->
+
+        <TextView
+            android:id="@+id/register_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#e30000"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#ff6347"
+            android:onClick="registerUser"
+            android:text="@string/btnRegister"
+            android:textColor="#fff" />
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:onClick="navigatetoLoginActivity"
+            android:text="Already a member? Login"
+            android:textColor="#228b22"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>
